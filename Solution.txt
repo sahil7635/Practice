@@ -1,0 +1,9 @@
+#If drag and drop feathure not working in sysytem then we do this
+#1> step 
+ sudo nano /etc/gdm3/custom.conf
+
+#2>Uncomment the line
+ WaylandEnable=false
+
+#3>Then we need to restart the gdm3
+ sudo systemctl restart gdm3
